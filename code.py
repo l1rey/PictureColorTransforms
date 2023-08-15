@@ -9,7 +9,7 @@ im = Image.open("picture.jpg")
 
 
 picture = im.convert("L")
-picture.save('pictureedgeenhance.jpg')
+picture.save('pictureconvert.jpg')
 im.close()
 
 
