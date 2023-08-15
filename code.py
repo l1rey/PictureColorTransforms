@@ -7,8 +7,9 @@ def main():
 
 im = Image.open("picture.jpg")
 
-filtered_picture = im.filter(ImageFilter.EDGE_ENHANCE_MORE)
-filtered_picture.save('pictureedgeenhance.jpg')
+
+picture = im.convert("L")
+picture.save('pictureedgeenhance.jpg')
 im.close()
 
 
